@@ -1,13 +1,13 @@
 [site]
-title = "Jiale Liu"
-description = "PhD student at the University of Example."
+title = "sgly2004"
+description = "Personal homepage of sgly2004."
 favicon = "/favicon.svg"
-last_updated = "November 18, 2025"
+last_updated = "May 29, 2026"
 
 [author]
-name = "Jiale Liu"
-title = "PhD Student"
-institution = "University of Example"
+name = "sgly2004"
+title = "Researcher / Developer"
+institution = "Your Institution"
 avatar = "/bio.jpg"
 
 [social]
