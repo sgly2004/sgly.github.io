@@ -2,6 +2,7 @@
 
 import { create } from 'zustand';
 import { matchLocale } from '@/lib/i18n/config';
+import { getSafeStorage } from '@/lib/safeStorage';
 import type { I18nRuntimeConfig } from '@/types/i18n';
 
 const LOCALE_STORAGE_KEY = 'locale-storage';
@@ -24,7 +25,7 @@ function updateDocumentLocale(locale: string) {
 
 function readPersistedLocale(locales: string[]): string | null {
   try {
-    const raw = localStorage.getItem(LOCALE_STORAGE_KEY);
+    const raw = getSafeStorage().getItem(LOCALE_STORAGE_KEY);
     return matchLocale(raw, locales);
   } catch {
     return null;
@@ -33,7 +34,7 @@ function readPersistedLocale(locales: string[]): string | null {
 
 function writePersistedLocale(locale: string) {
   try {
-    localStorage.setItem(LOCALE_STORAGE_KEY, locale);
+    getSafeStorage().setItem(LOCALE_STORAGE_KEY, locale);
   } catch {
     // ignore storage errors
   }
@@ -41,7 +42,7 @@ function writePersistedLocale(locale: string) {
 
 function clearPersistedLocale() {
   try {
-    localStorage.removeItem(LOCALE_STORAGE_KEY);
+    getSafeStorage().removeItem(LOCALE_STORAGE_KEY);
   } catch {
     // ignore storage errors
   }

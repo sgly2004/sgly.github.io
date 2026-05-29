@@ -39,6 +39,11 @@ type = "image"
 src = "/images/shenlan-roadshow-group.jpg"
 alt = "奇绩创坛路演合影"
 
+[[items.media]]
+type = "image"
+src = "/images/shenlan-roadshow-group-2.jpg"
+alt = "奇绩创坛路演合影 2"
+
 [[items]]
 title = "未卜岁：Agent infra 和产业级智能体"
 subtitle = "Agent infrastructure / Industrial agents"

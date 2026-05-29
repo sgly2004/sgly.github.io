@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
+import { getSafeStorage } from '@/lib/safeStorage';
 
 export type Theme = 'light' | 'dark' | 'system';
 
@@ -28,16 +29,7 @@ export const useThemeStore = create<ThemeStore>()(
     }),
     {
       name: 'theme-storage',
-      storage: createJSONStorage(() => {
-        if (typeof window !== 'undefined') {
-          return localStorage;
-        }
-        return {
-          getItem: () => null,
-          setItem: () => { },
-          removeItem: () => { },
-        };
-      }),
+      storage: createJSONStorage(() => getSafeStorage()),
     }
   )
 );

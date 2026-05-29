@@ -39,6 +39,11 @@ type = "image"
 src = "/images/shenlan-roadshow-group.jpg"
 alt = "MiraclePlus roadshow group photo"
 
+[[items.media]]
+type = "image"
+src = "/images/shenlan-roadshow-group-2.jpg"
+alt = "MiraclePlus roadshow group photo 2"
+
 [[items]]
 title = "Weibusui: Agent Infra and Industrial Agents"
 subtitle = "Agent infrastructure / Industrial agents"
