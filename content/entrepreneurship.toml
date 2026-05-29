@@ -1,0 +1,47 @@
+type = "card"
+title = "Entrepreneurship"
+description = "My entrepreneurship work is centered on AI agents: writing assistance, data-model customization, agent infrastructure, and industrial agents."
+
+[[items]]
+title = "Winihelper: AI Writing Assistant"
+subtitle = "2024.09 - 2025.06"
+content = "Winihelper is a human-in-the-loop AI writing assistant. We started from academic writing services and gradually turned topic selection, retrieval, generation, and revision feedback into product capabilities. The project was already exploring multi-agent collaboration around real writing workflows."
+tags = ["AI Writing", "Multi-Agent", "Human-in-the-loop"]
+
+[[items.media]]
+type = "image"
+src = "/images/winihelper-product.png"
+alt = "Winihelper product overview"
+
+[[items.media]]
+type = "image"
+src = "/images/winihelper-multi-agent.png"
+alt = "Winihelper multi-agent workflow"
+
+[[items]]
+title = "Shenlan Zhiyuan: Data-Model Customization Platform"
+subtitle = "2025.09 - 2026.04"
+content = "Shenlan Zhiyuan builds customized data models and decision automation systems for traditional industries. Starting from fresh-produce retail, we worked on AI-managed workflows for purchasing, listing, sales, and review, and received investment from MiraclePlus."
+tags = ["Shenlan Zhiyuan", "Data Models", "MiraclePlus"]
+
+[[items.media]]
+type = "image"
+src = "/images/shenlan-wechat-screenshot.png"
+alt = "Shenlan Zhiyuan WeChat article screenshot"
+
+[[items.media]]
+type = "image"
+src = "/images/shenlan-exhibition.jpg"
+alt = "MiraclePlus exhibition"
+
+[[items.media]]
+type = "image"
+src = "/images/shenlan-roadshow-group.jpg"
+alt = "MiraclePlus roadshow group photo"
+
+[[items]]
+title = "Weibusui: Agent Infra and Industrial Agents"
+subtitle = "Agent infrastructure / Industrial agents"
+content = "Weibusui focuses on agent infrastructure and industrial agents, especially enterprise knowledge access, tool use, workflow orchestration, and sustainable delivery. I care less about one-off demos and more about agents that can run reliably, learn continuously, and be managed by real teams."
+tags = ["Agent infra", "Industrial Agents", "MaaS"]
+image = "/images/maas-platform.png"

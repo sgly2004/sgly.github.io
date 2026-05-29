@@ -1,0 +1,61 @@
+type = "card"
+title = "竞赛"
+description = "这里放一些我参与过的机器人竞赛和 AI 项目竞赛。它们不是简单的获奖记录，更重要的是让我真正做过系统、调过设备、把想法交付成作品。"
+
+[[items]]
+title = "全国大学生电子设计竞赛（电赛）"
+subtitle = "机器人小车"
+content = "围绕机器人小车完成目标识别、运动控制和任务执行验证。这个项目让我把嵌入式、控制和现场调试真正落到可以跑起来的作品上。"
+tags = ["机器人", "电赛", "嵌入式"]
+
+[[items.media]]
+type = "video"
+src = "/videos/nuedc-laser-targeting.mp4"
+alt = "激光打靶小车"
+
+[[items.media]]
+type = "video"
+src = "/videos/nuedc-robot-arm-car.mp4"
+alt = "机械臂小车"
+
+[[items]]
+title = "RoboMaster 机甲大师"
+subtitle = "车组负责人 / 研发代表"
+content = "在队伍里负责机器人自主移动相关研发，做过上下位机串口通信、双 miniPC 间 TCP/IP 通信、传感器接入、建图导航方案验证，也用行为树组织自主决策。项目获得机甲大师联盟赛全国二等奖、对抗赛全国三等奖。"
+tags = ["RoboMaster", "SLAM", "自主导航"]
+
+[[items.media]]
+type = "image"
+src = "/images/robomaster-arena.png"
+alt = "RoboMaster 赛场照片"
+
+[[items.media]]
+type = "video"
+src = "/videos/robomaster-navigation.mp4"
+alt = "RoboMaster 导航避障视频"
+
+[[items]]
+title = "论文写作项目"
+subtitle = "AI 写作辅助 / Multi-Agent"
+content = "围绕 AI 写作辅助和多智能体协作，我们参加了几项创新创业与人工智能赛事。这个项目后来也延续到我的创业实践里。"
+tags = ["创赛", "AI 写作", "Multi-Agent"]
+
+[[items.media]]
+type = "image"
+src = "/images/ict-agent-sandbox.jpg"
+alt = "高校 ICT 奖项"
+
+[[items.media]]
+type = "image"
+src = "/images/writing-award-internet-plus.png"
+alt = "中国国际大学生创新大赛证明材料"
+
+[[items.media]]
+type = "image"
+src = "/images/writing-award-robot-ai.png"
+alt = "中国机器人及人工智能大赛证明材料"
+
+[[items.media]]
+type = "image"
+src = "/images/writing-award-service-outsourcing.png"
+alt = "中国大学生服务外包创新创业大赛证明材料"

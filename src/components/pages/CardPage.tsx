@@ -1,8 +1,65 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
-import { CardPageConfig } from '@/types/page';
+import { CardMediaItem, CardPageConfig } from '@/types/page';
+
+function VideoMedia({ src }: { src: string }) {
+    if (src.startsWith('http://') || src.startsWith('https://')) {
+        return (
+            <iframe
+                src={src}
+                title="Video"
+                className="absolute inset-0 h-full w-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+            />
+        );
+    }
+
+    return (
+        <video controls className="h-full w-full object-cover" preload="metadata">
+            <source src={src} />
+        </video>
+    );
+}
+
+function CardMedia({ image, video, media }: { image?: string; video?: string; media?: CardMediaItem[] }) {
+    const items = media?.length
+        ? media
+        : [
+            ...(image ? [{ type: 'image' as const, src: image }] : []),
+            ...(video ? [{ type: 'video' as const, src: video }] : []),
+        ];
+
+    if (items.length === 0) {
+        return null;
+    }
+
+    return (
+        <div className={`grid gap-3 mb-4 ${items.length > 1 ? 'md:grid-cols-2' : ''}`}>
+            {items.map((item) => (
+                <div
+                    key={`${item.type}-${item.src}`}
+                    className="aspect-video relative rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-800"
+                >
+                    {item.type === 'video' ? (
+                        <VideoMedia src={item.src} />
+                    ) : (
+                        <Image
+                            src={item.src}
+                            alt={item.alt || ''}
+                            fill
+                            className="object-cover"
+                            sizes={items.length > 1 ? "(max-width: 768px) 100vw, 384px" : "(max-width: 768px) 100vw, 768px"}
+                        />
+                    )}
+                </div>
+            ))}
+        </div>
+    );
+}
 
 const markdownComponents = {
     p: ({ children }: React.ComponentProps<'p'>) => <p className="mb-3 last:mb-0">{children}</p>,
@@ -67,6 +124,7 @@ export default function CardPage({ config, embedded = false }: { config: CardPag
                         {item.subtitle && (
                             <p className={`${embedded ? "text-sm" : "text-base"} text-accent font-medium mb-3`}>{item.subtitle}</p>
                         )}
+                        <CardMedia image={item.image} video={item.video} media={item.media} />
                         {item.content && (
                             <div className={`${embedded ? "text-sm" : "text-base"} text-neutral-600 dark:text-neutral-500 leading-relaxed`}>
                                 <ReactMarkdown components={markdownComponents}>

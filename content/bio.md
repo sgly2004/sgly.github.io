@@ -1,5 +1,7 @@
-I am a PhD student at the School of Science, University of Example, advised by [Prof. Advisor One](https://example.com) and [Dr. Advisor Two](https://example.com).
+I'm **Qiyuan Liu (刘骐源)**, currently studying at Beijing University of Posts and Telecommunications. My research interests are in **AI Agents**, especially memory and continual learning, long-horizon planning, and context management. I am currently working with my team on production-grade agents, and I welcome discussions in this direction.
 
-Prior to this, I obtained a BSc degree with First Class Honours in Natural Science from the University of Example.
+**Education**
 
-My current research focuses on investigating the mathematical principles of natural philosophy.
+- 2022.09 - 2026.06: B.Eng. in Information Engineering, Beijing University of Posts and Telecommunications
+- 2026.09 - 2029.06: M.Eng. in Intelligent Science and Technology, Beijing University of Posts and Telecommunications
+

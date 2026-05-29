@@ -22,6 +22,15 @@ export interface CardItem {
     tags?: string[];
     link?: string;
     image?: string;
+    /** Local path (e.g. /videos/demo.mp4) or embed URL (YouTube / Bilibili player link). */
+    video?: string;
+    media?: CardMediaItem[];
+}
+
+export interface CardMediaItem {
+    type: 'image' | 'video';
+    src: string;
+    alt?: string;
 }
 
 export interface CardPageConfig extends BasePageConfig {

@@ -1,0 +1,47 @@
+type = "card"
+title = "创业"
+description = "我主要做和 AI Agent 相关的创业实践：从写作辅助工具，到数据模型定制平台，再到 Agent infra 和产业级智能体。"
+
+[[items]]
+title = "Winihelper：AI 写作辅助工具"
+subtitle = "2024.09 - 2025.06"
+content = "Winihelper 是一个人类在环的 AI 写作辅助工具。我们从论文写作服务切入，逐步把选题、资料检索、内容生成和修改反馈沉淀为产品能力；当时已经在探索多智能体协作，并围绕真实写作流程做工具化落地。"
+tags = ["AI 写作", "Multi-Agent", "人类在环"]
+
+[[items.media]]
+type = "image"
+src = "/images/winihelper-product.png"
+alt = "Winihelper product overview"
+
+[[items.media]]
+type = "image"
+src = "/images/winihelper-multi-agent.png"
+alt = "Winihelper multi-agent workflow"
+
+[[items]]
+title = "深澜智远：赋能千行百业的数据模型定制平台"
+subtitle = "2025.09 - 2026.04"
+content = "深澜智远面向传统行业的高损耗、错订和定价不准等问题，提供低成本行业本体模型和决策自动化系统。我们从生鲜行业切入，尝试把进货、上架、销售和复盘流程交给 AI 接管，并获得奇绩创坛投资。"
+tags = ["深澜智远", "数据模型定制", "奇绩创坛"]
+
+[[items.media]]
+type = "image"
+src = "/images/shenlan-wechat-screenshot.png"
+alt = "深澜智远公众号截图"
+
+[[items.media]]
+type = "image"
+src = "/images/shenlan-exhibition.jpg"
+alt = "奇绩创坛展区"
+
+[[items.media]]
+type = "image"
+src = "/images/shenlan-roadshow-group.jpg"
+alt = "奇绩创坛路演合影"
+
+[[items]]
+title = "未卜岁：Agent infra 和产业级智能体"
+subtitle = "Agent infrastructure / Industrial agents"
+content = "未卜岁关注 Agent infra 和产业级智能体，重点放在企业知识接入、工具调用、工作流编排和可持续运行的交付体系上。相比单点 Demo，我更关心智能体如何在真实业务里稳定工作、持续学习并被团队管理。"
+tags = ["Agent infra", "产业级智能体", "MaaS"]
+image = "/images/maas-platform.png"

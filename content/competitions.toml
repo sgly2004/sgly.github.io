@@ -1,0 +1,61 @@
+type = "card"
+title = "Competitions"
+description = "Selected robotics and AI competitions I worked on. These experiences matter to me because they required building systems, debugging hardware, and turning ideas into working demos."
+
+[[items]]
+title = "National Undergraduate Electronic Design Contest"
+subtitle = "Robotic vehicle"
+content = "Built and validated robotic vehicles for target recognition, motion control, and task execution. This project turned embedded systems, control, and field debugging into working prototypes."
+tags = ["Robotics", "NUEDC", "Embedded Systems"]
+
+[[items.media]]
+type = "video"
+src = "/videos/nuedc-laser-targeting.mp4"
+alt = "Laser targeting robotic vehicle"
+
+[[items.media]]
+type = "video"
+src = "/videos/nuedc-robot-arm-car.mp4"
+alt = "Robotic arm vehicle"
+
+[[items]]
+title = "RoboMaster"
+subtitle = "Vehicle group lead / R&D representative"
+content = "Worked on autonomous mobility for a competition robot, including serial communication, TCP/IP communication between two mini PCs, sensor integration, mapping and navigation experiments, and behavior-tree-based decision logic."
+tags = ["RoboMaster", "SLAM", "Autonomous Navigation"]
+
+[[items.media]]
+type = "image"
+src = "/images/robomaster-arena.png"
+alt = "RoboMaster arena photo"
+
+[[items.media]]
+type = "video"
+src = "/videos/robomaster-navigation.mp4"
+alt = "RoboMaster navigation and obstacle avoidance"
+
+[[items]]
+title = "Paper Writing Project"
+subtitle = "AI writing assistant / Multi-Agent"
+content = "Built around AI writing assistance and multi-agent collaboration, this project went through several innovation and AI competitions and later continued into my entrepreneurship work."
+tags = ["Innovation", "AI Writing", "Multi-Agent"]
+
+[[items.media]]
+type = "image"
+src = "/images/ict-agent-sandbox.jpg"
+alt = "ICT competition award"
+
+[[items.media]]
+type = "image"
+src = "/images/writing-award-internet-plus.png"
+alt = "China International College Students' Innovation Competition award"
+
+[[items.media]]
+type = "image"
+src = "/images/writing-award-robot-ai.png"
+alt = "China Robotics and Artificial Intelligence Competition award"
+
+[[items.media]]
+type = "image"
+src = "/images/writing-award-service-outsourcing.png"
+alt = "China Students Service Outsourcing Innovation and Entrepreneurship Competition award"
